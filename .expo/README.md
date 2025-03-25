@@ -54,18 +54,25 @@ Dịch vụ bổ sung 4.1 Thêm bảo hiểm • Khách hàng có thể mua thê
 Dịch vụ bổ sung (Thanh toán và hóa đơn) 5.1 Thanh toán dịch vụ • Thanh toán phí thuê xe và các dịch vụ bổ sung. • Hỗ trợ nhiều phương thức thanh toán (ví điện tử, thẻ ngân hàng, tiền mặt). 5.2 Xử lý thanh toán • Hệ thống xác nhận giao dịch thành công. • Hoàn tiền nếu khách hủy dịch vụ theo chính sách. 5.3 Tạo hóa đơn • Xuất hóa đơn điện tử cho khách hàng sau khi hoàn thành giao dịch.
 Theo dõi và báo cáo 6.1 Lịch sử thuê xe theo thành viên • Ghi lại lịch sử thuê xe của từng người dùng. • Hiển thị số lần thuê, tổng số tiền đã chi tiêu. 6.2 Log bảo trì/Sự cố xe • Ghi nhận lịch sử bảo trì xe, sửa chữa xe. • Theo dõi các sự cố hư hỏng hoặc tai nạn liên quan đến xe. 6.3 Báo cáo doanh thu/Tỉ lệ sử dụng xe • Tổng hợp doanh thu theo ngày/tháng/năm. • Thống kê tỉ lệ sử dụng xe theo thời gian để tối ưu hóa quản lý.
 Thông báo tự động 7.1 Nhắc lịch đặt xe • Gửi thông báo nhắc nhở khách trước thời gian nhận xe. 7.2 Cảnh báo trễ hạn • Gửi cảnh báo nếu khách không trả xe đúng giờ. • Áp dụng phí trễ hạn nếu quá thời gian quy định. 7.3 Xác nhận đặt xe • Gửi email/SMS/Xác nhận trong app khi khách hàng đặt xe thành công. Biểu đồ lớp MotorRentalSystem: phần mềm này thiết kế dành cho phần chính của tổ chức MotorRentalLocation: Hệ thống này cho thuê ở nhiều địa điểm khác nhau , mỗi địa điểm có “name” để phân biệt địa điểm và “adress” để xác định địa điểm cho thuê. Motorcycle: khối xây dựng cơ bản của hệ thống. Mỗi xe có mã vạch, biển số ,kiểu xe , nhãn hiệu , số Km đã đi, v.v.Xe máy có các loại như xe số , xe tay ga , xe côn. Acount: về cơ bản có hai loại tài khoản trong hệ thống, một là thành viên chung và một là nhân viên ( lễ tân). Một tài khoản khác cơ thể của nhân viên chăm sóc xe trả lại. MotorReservation: lớp này chịu trách nhiệm quản lý việc đặt trước một chiếc xe. Notification: sẽ chịu trách nhiệm gửi thông báo tới các thành viên. RentalInsurance: lưu trữ thông tin chi tiết về các loại bảo hiểm khác nhau mà thành viên có thể thêm vào việc đặt trước của mình.S Equipment: Lưu trữ thông tin chi tiết về các loại thiết bị đi kèm khác nhau mà thành viên có thể vào việc đặt trước của mình. Service: Lưu trữ thông tin chi tiết về các loại dịch khách nhau mà thành viên có thể thêm vào việc đặt trước của mình , ví dụ như hỗ trợ sự cố, giao xe tận nơi, v.v. Bill: Gồm các mục hóa đơn khác nhau cho mỗi khoản phí đặt trước.
-Biểu Đồ ERD:image
+Biểu Đồ ERD: ![image](https://github.com/user-attachments/assets/551c36bc-7972-4a8a-a19f-49fee5ecbe9f)
 
-Sơ đồ use case:image
 
-Sơ đồ tổng quát:
+Sơ đồ use case:
 
-Quản lý danh sách xe:image
+Sơ đồ tổng quát:![image](https://github.com/user-attachments/assets/7af286fe-4a85-4db9-9f15-3b9aeb334c81)
 
-Quản lý đơn thuê xe và giao xe:image
 
-Quản lý thanh toán:image
+Quản lý danh sách xe:![image](https://github.com/user-attachments/assets/dece91a2-e4a5-4f4d-b357-dfaecc144ee4)
 
-Quản lý tạo đơn thuê xe:image
 
-Quản lý kho:image
+Quản lý đơn thuê xe và giao xe:![image](https://github.com/user-attachments/assets/f4d7763e-c4a4-4684-9e9a-6e2d71e851cc)
+
+
+Quản lý thanh toán:![image](https://github.com/user-attachments/assets/230176b7-0fc2-41ce-a75e-b0c748a05484)
+
+
+Quản lý tạo đơn thuê xe:![image](https://github.com/user-attachments/assets/8852b316-5774-4813-a55b-cfc2e358be89)
+
+
+Quản lý kho:![image](https://github.com/user-attachments/assets/769be63f-4785-428c-abf8-cace2bcbb212)
+
